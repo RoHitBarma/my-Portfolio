@@ -1,14 +1,15 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import portfolio from '../assets/project1.png'
 
 const projects = [
   {
     title: "Portfolio Website",
     description: "A responsive and animated personal portfolio built with React and Tailwind CSS.",
     tech: ["React", "Tailwind CSS", "Framer Motion"],
-    image: "/projects/portfolio.png", // public folder me image rakho
-    live: "https://your-portfolio-live-link.com",
-    github: "https://github.com/yourusername/portfolio",
+    image: portfolio, 
+    live: "https://rohitbarma.github.io/my-Portfolio",
+    github: "https://github.com/RoHitBarma/my-Portfolio",
   },
   {
     title: "Weather App",
