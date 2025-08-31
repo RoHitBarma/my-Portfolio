@@ -33,8 +33,8 @@ const projects = [
 
 const Project = () => {
   return (
-    <section className="min-h-screen bg-gray-900 text-white py-12 px-6">
-      <h2 className="text-3xl font-bold text-center mb-12">
+    <section className="min-h-screen bg-gray-100 text-gray-800 dark:bg-gray-900 dark:text-white py-12 px-6">
+      <h2 className="text-3xl font-bold text-center pt-5 mb-12">
         My <span className="text-indigo-500">Projects</span>
       </h2>
 
@@ -42,7 +42,7 @@ const Project = () => {
         {projects.map((project, index) => (
           <motion.div
             key={index}
-            className="bg-gray-800 rounded-xl shadow-lg overflow-hidden transition duration-300"
+            className="bg-gray-300 dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transition duration-300"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4, delay: index * 0.1 }}
@@ -57,14 +57,14 @@ const Project = () => {
             {/* card section */}
             <div className='p-4'>
               <h3 className='text-xl font-semibold mb-2'>{project.title}</h3>
-              <p className='text-sm text-gray-300 mb-4'>{project.description}</p>
+              <p className='text-sm text-gray-800 dark:text-gray-300 mb-4'>{project.description}</p>
 
               {/* Tech stack badges */}
               <div className="flex flex-wrap gap-2 mb-4">
                 {project.tech.map((tech, i) => (
                   <span
                     key={i}
-                    className="bg-gray-700 px-3 py-1 rounded-full text-sm border border-gray-600"
+                    className="bg-gray-500 dark:bg-gray-700 px-3 py-1 rounded-full text-sm border border-gray-600"
                   >
                     {tech}
                   </span>
@@ -83,7 +83,7 @@ const Project = () => {
                 <a
                   href={project.github}
                   target="_blank"
-                  className="px-4 py-2 bg-gray-700 rounded-lg hover:bg-gray-600 text-sm"
+                  className="px-4 py-2 bg-gray-400 dark:bg-gray-700 rounded-lg hover:bg-gray-500 dark:hover:bg-gray-600 text-sm"
                 >
                   GitHub
                 </a>

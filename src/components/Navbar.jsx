@@ -1,10 +1,10 @@
 import { label } from 'framer-motion/client';
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link, NavLink } from 'react-router-dom';
 
-const Navbar = () => {
+const Navbar = ({theme, toggleTheme}) => {
 
-  const [isOpen, setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(false);
 
   const navLinks = [
     { to: "/", label: "Home" },
@@ -14,11 +14,13 @@ const Navbar = () => {
     { to: "/contact", label: "Contact" },
   ];
 
+
   return (
-    <nav className='bg-gray-900 text-white shadow-md fixed top-0 w-full z-50'>
+    <nav className='bg-gray-200 text-black dark:bg-gray-800 dark:text-white shadow-md fixed top-0 w-full z-50 transition-colors duration-300'>
       <div className='max-w-6xl mx-auto px-4 py-3 flex justify-between items-center'>
         <Link to="/" className='text-xl font-bold'>Rohit Barma</Link>
 
+        {/* dextop menu */}
         <div className='hidden md:flex space-x-6'>
           {navLinks.map((link) => (
             <NavLink 
@@ -31,10 +33,27 @@ const Navbar = () => {
               {link.label}
             </NavLink>
           ))}
+
+          {/* Theme toggle button */}
+          <button 
+            onClick={toggleTheme} 
+            className="ml-4 p-1 text-sm rounded bg-gray-200 dark:bg-gray-700 transition-colors duration-300"
+          >
+            {theme === "light" ? "🌙" : "☀️"}
+          </button>
         </div>
 
-        {/* mobile toggle button */}
+        
+        {/* mobile screen */}
         <div className='md:hidden'>
+          {/* //mobile toggle button
+          <button
+            onClick={toggleTheme}
+            className='p-1 rounded bg-gray-200 transition-colors duration-300'
+          >
+            {theme === "light" ? "🌙" : "☀️"}
+          </button> */}
+          
           <button onClick={() => setIsOpen(!isOpen)}>
             <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               {isOpen ? (
@@ -49,7 +68,7 @@ const Navbar = () => {
 
       {/* mobile menu */}
       {isOpen && (
-        <div className='md:hidden px-4 pb-4 space-y-2 bg-gray-800'>
+        <div className='md:hidden px-4 pb-4 space-y-2 bg-gray-200 dark:bg-gray-800'>
           {navLinks.map((link) => (
             <NavLink
               key={link.to}
@@ -62,6 +81,13 @@ const Navbar = () => {
               {link.label}
             </NavLink>
           ))}
+          {/* mobile theme toggle button */}
+          <button
+            onClick={toggleTheme}
+            className='p-1 rounded bg-gray-200 transition-colors duration-300'
+          >
+            {theme === "light" ? "🌙" : "☀️"}
+          </button>
         </div>
       )}
     </nav>

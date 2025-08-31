@@ -35,23 +35,23 @@ const Contact = () => {
   };
 
   return (
-    <section className="bg-gray-900 text-white py-16 px-6" id="contact">
+    <section className="min-h-screen bg-gray-100 dark:bg-gray-900 text-black dark:text-white py-18 px-6" id="contact">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-4xl font-bold text-center mb-8">Get in Touch</h2>
-        <p className="text-center text-gray-400 mb-12">
+        <h2 className="text-4xl font-bold text-center mb-8">Get in <span className="text-indigo-500">Touch</span> </h2>
+        <p className="text-center text-gray-700 dark:text-gray-400 mb-12">
           I'm open to freelance work, collaborations, and full-time opportunities.
         </p>
 
         {/* Contact Form */}
         <form
           onSubmit={sendEmail}
-          className="bg-gray-800 p-6 rounded-lg shadow-lg space-y-4"
+          className="bg-gray-300 dark:bg-gray-800 p-6 rounded-lg shadow-lg space-y-4"
         >
           <input
             type="text"
             name="name"
             placeholder="Your Name"
-            className="w-full p-3 rounded bg-gray-700 outline-none"
+            className="w-full p-3 rounded bg-gray-400 dark:bg-gray-700 outline-none"
             value={formData.name}
             onChange={handleChange}
             required
@@ -60,7 +60,7 @@ const Contact = () => {
             type="email"
             name="email"
             placeholder="Your Email"
-            className="w-full p-3 rounded bg-gray-700 outline-none"
+            className="w-full p-3 rounded bg-gray-400 dark:bg-gray-700 outline-none"
             value={formData.email}
             onChange={handleChange}
             required
@@ -68,8 +68,8 @@ const Contact = () => {
           <textarea
             name="message"
             placeholder="Your Message"
-            rows="5"
-            className="w-full p-3 rounded bg-gray-700 outline-none"
+            rows="4"
+            className="w-full p-3 rounded bg-gray-400 dark:bg-gray-700 outline-none"
             value={formData.message}
             onChange={handleChange}
             required
@@ -105,7 +105,7 @@ const Contact = () => {
             href="https://www.youtube.com/@Fact-Ozone"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-blue-300 transition duration-300"
+            className="hover:text-red-600 transition duration-300"
           >
             <FaYoutube />
           </a>

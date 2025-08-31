@@ -9,13 +9,13 @@ const About = () => {
   const skills = ["HTML", "CSS", "JavaScript", "Tailwind CSS", "React", "Nodejs", "Git & Github", "Bootstrap"]
 
   return (
-    <section className='min-h-screen bg-gray-900 pt-10 text-white flex items-center' id="about">
-      <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
+    <section className='min-h-screen bg-gray-300 dark:bg-gray-900 text-black dark:text-white flex items-center' id="about">
+      <div className="max-w-6xl mx-auto px-6 pt-3 grid md:grid-cols-2 gap-8 items-center">
         {/* Profile image of about */}
         <motion.img 
           src={rohitIMG}
           alt='profile img'
-          className='w-52 h-52 md:w-72 md:h-72 object-cover rounded-full mx-auto border-4 border-yellow-400 shadow-xl hover:scale-105 transition-transform duration-300'
+          className='w-52 h-52 md:w-76 md:h-76 object-cover rounded-full mx-auto border-4 border-yellow-400 shadow-xl hover:scale-105 transition-transform duration-300'
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6 }}
@@ -28,7 +28,7 @@ const About = () => {
           transition={{duration: 0.7}}
         >
           <h2 className='text-2xl mb-3 text-yellow-600'>About Me</h2>
-          <p className='mb-6 leading-relaxed text-gray-300'>
+          <p className='mb-6 leading-relaxed text-gray-600 dark:text-gray-300'>
             Hi I'm <span className='font-semibold text-indigo-600'>Rohit Barma</span>,
             a passionate <span className='font-semibold'>Frontend Developer</span> currently learning 
             <span className="font-semibold text-indigo-400"> Full Stack Development</span>. 
