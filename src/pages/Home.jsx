@@ -9,7 +9,7 @@ import { FaReact, FaJsSquare, FaGithub, FaHtml5, FaCss3Alt } from "react-icons/f
 
 const Home = () => {
   return (
-    <section className='relative h-screen px-5 md:px-20 pt-20 bg-gray-300 dark:bg-gray-900 text-black dark:text-white overflow-hidden'>
+    <section className='relative min-h-screen py-4 px-5 md:px-20 pt-20 bg-gray-300 dark:bg-gray-900 text-black dark:text-white overflow-hidden'>
 
       {/* 🔹 Subtle background decoration */}
       <div className="absolute top-0 left-0 w-72 h-72 bg-yellow-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse"></div>

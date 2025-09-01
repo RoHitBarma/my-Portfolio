@@ -9,8 +9,8 @@ const About = () => {
   const skills = ["HTML", "CSS", "JavaScript", "Tailwind CSS", "React", "Nodejs", "Git & Github", "Bootstrap"]
 
   return (
-    <section className='min-h-screen bg-gray-300 dark:bg-gray-900 text-black dark:text-white flex items-center' id="about">
-      <div className="max-w-6xl mx-auto px-6 pt-3 grid md:grid-cols-2 gap-8 items-center">
+    <section className='min-h-screen bg-gray-300 dark:bg-gray-900 text-black dark:text-white flex items-center sm:pt-4' id="about">
+      <div className="max-w-6xl mx-auto px-6 py-6 pt-18 grid md:grid-cols-2 gap-8 items-center">
         {/* Profile image of about */}
         <motion.img 
           src={rohitIMG}
