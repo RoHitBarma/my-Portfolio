@@ -2,7 +2,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 import rohitIMG from '../assets/rohit-IMG.png'
-import rohitCv from '../assets/RohitbarmaCV.pdf'
+import rohitCv from '../assets/rohitresume.pdf'
 import { ReactTyped } from "react-typed";
 import { FaReact, FaJsSquare, FaGithub, FaHtml5, FaCss3Alt } from "react-icons/fa";
 

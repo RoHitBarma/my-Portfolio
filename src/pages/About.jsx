@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import rohitIMG from '../assets/rohit-IMG.png'
-import rohitCv from '../assets/RohitbarmaCV.pdf'
+import rohitCv from '../assets/rohitresume.pdf'
 import { span } from 'framer-motion/client';
 
 const About = () => {
