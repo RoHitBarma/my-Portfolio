@@ -4,7 +4,7 @@ import portfolio from '../assets/project1.png'
 import BurgerStore from '../assets/project2.png'
 import BlogApp from '../assets/project3.png'
 import GymWebsite from '../assets/yourGym.png'
-import SweetShop from '../assets/sweetshop.png'
+import SweetShop from '../assets/sweetShop.png'
 
 const projects = [
   {
