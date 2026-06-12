@@ -3,6 +3,8 @@ import { motion } from 'framer-motion';
 import portfolio from '../assets/project1.png'
 import BurgerStore from '../assets/project2.png'
 import BlogApp from '../assets/project3.png'
+import GymWebsite from '../assets/yourGym.png'
+import SweetShop from '../assets/sweetshop.png'
 
 const projects = [
   {
@@ -29,6 +31,22 @@ const projects = [
     live: "https://rohitbarma.github.io/blog-app/",
     github: "https://github.com/RoHitBarma/blog-app",
   },
+  {
+    title: "Gym Website",
+    description: "A responsive gym website built with React and Tailwind CSS. It features a modern design, smooth animations, and interactive components to showcase gym services, trainers, and membership options.",
+    tech: ["React", "Tailwind CSS", "Framer Motion"],
+    image: GymWebsite,
+    live: "https://your-gym-drab.vercel.app/",
+    github: "https://github.com/RoHitBarma/YourGym",
+  },
+  {
+    title: "Sweet shop",
+    description: "A responsive sweet shop website built with React and Tailwind CSS. It features a modern design, smooth animations, and interactive components to showcase gym services, trainers, and membership options.",
+    tech: ["React", "Tailwind CSS", "Framer Motion"],
+    image: SweetShop,
+    live: "https://kaligodam-sweets.vercel.app/",
+    github: "https://github.com/RoHitBarma/kaligodam-sweets"
+  }
 ]
 
 const Project = () => {
